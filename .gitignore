@@ -1,0 +1,29 @@
+# macOS
+.DS_Store
+
+# Python caches and build artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+*.egg-info/
+
+# Local session/planning artifacts
+.sisyphus/
+session-ses_*.md
+firebase-debug.log
+
+# Legacy/reference datasets and papers kept out of git (root-level only)
+/*.pdf
+/*.pptx
+/*.bib
+/*.zip
+/*.png
+/*.jpg
+
+# Legacy extracted directories (root-level)
+/CameraLensArray/
+/DeconvolutionColorPrior/
+/fresnel_lens/

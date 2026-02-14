@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fresnel-imaging"
+version = "0.1.0"
+description = "Fresnel lens computational imaging pipeline: deconvolution, simulation, and PSF calibration"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "Simon Myunggun Seo"},
+]
+
+dependencies = [
+    "numpy>=1.24",
+    "scipy>=1.10",
+    "scikit-image>=0.20",
+    "opencv-python>=4.7",
+    "matplotlib>=3.7",
+    "Pillow>=9.4",
+]
+
+[project.optional-dependencies]
+gpu = ["torch>=2.0", "torchvision>=0.15"]
+bm3d = ["bm3d>=4.0"]
+dev = ["pytest>=7.0", "pytest-cov", "ruff"]
+
+[project.scripts]
+fresnel-deblur = "fresnel_imaging.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
