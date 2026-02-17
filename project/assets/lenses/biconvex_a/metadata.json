@@ -1,0 +1,31 @@
+{
+  "id": "biconvex_a",
+  "kind": "biconvex",
+  "parameters": {
+    "prescription": [
+      {
+        "radius": 70.0,
+        "thickness": 7.0,
+        "ior": 1.5168,
+        "diameter": 52.0
+      },
+      {
+        "radius": -70.0,
+        "thickness": 25.0,
+        "ior": 1.0,
+        "diameter": 52.0
+      }
+    ],
+    "segments": 256
+  },
+  "object_names": [
+    "biconvex_a_E0"
+  ],
+  "object_count": 1,
+  "files": {
+    "scene_blend": "scene.blend",
+    "preview_png": "preview.png",
+    "model_glb": "lens.glb",
+    "model_gltf": "lens.gltf"
+  }
+}

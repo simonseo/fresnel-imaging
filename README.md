@@ -27,6 +27,14 @@ pip install -e ".[dev]"   # pytest, ruff
 Simulation modules require [Blender](https://www.blender.org/) with the
 [LuxCoreRender](https://luxcorerender.org/) addon.
 
+Tested/latest compatible versions for this project:
+- Blender `4.5.6` (LTS macOS ARM build: `blender-4.5.6-macos-arm64.dmg`)
+- BlendLuxCore `2.10.2` addon zip (`BlendLuxCore-2.10.2.zip`)
+
+Download links:
+- Blender LTS 4.5: <https://www.blender.org/download/lts/4-5/>
+- BlendLuxCore releases (download the addon zip): <https://github.com/LuxCoreRender/BlendLuxCore/releases>
+
 ## Quick Start
 
 ### CLI

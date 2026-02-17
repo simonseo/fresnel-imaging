@@ -27,3 +27,17 @@ firebase-debug.log
 /CameraLensArray/
 /DeconvolutionColorPrior/
 /fresnel_lens/
+
+# Scratch outputs (root-level early-dev renders)
+/outputs/
+
+# Blender backup files
+*.blend1
+
+# Large binary artifacts that are reproducible via project scripts
+# (keep .blend scenes, .glb models, PNGs, and metadata in git;
+#  exclude heavy intermediates that can be regenerated)
+project/assets/lenses/*/step4/*.exr
+project/assets/lenses/*/step4/*.npy
+project/assets/lenses/*/step5_step6/*.npz
+project/assets/lenses/*/step5_step6/*.npy

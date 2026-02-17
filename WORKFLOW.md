@@ -11,8 +11,8 @@ of optics, Blender, or signal processing is assumed.
 | Component | Version | Purpose |
 |-----------|---------|---------|
 | **Python** | 3.10+ | Runtime for all scripts |
-| **Blender** | 3.6 LTS or 4.x | 3-D scene and mesh engine |
-| **BlendLuxCore** | 2.7+ | LuxCoreRender addon (glass caustics) |
+| **Blender** | 4.5.6 LTS | 3-D scene and mesh engine |
+| **BlendLuxCore** | 2.10.2 | LuxCoreRender addon (glass caustics) |
 | **OpenCV** | 4.x | Image I/O, distortion correction |
 | **NumPy / SciPy** | latest | Array math and optimisation |
 
@@ -28,9 +28,10 @@ Canonical repository: <https://github.com/simonseo/fresnel-imaging>
 This tutorial and implementation were created with help from OpenCode.
 
 **Blender setup:**
-1. Download from <https://www.blender.org/download/>.
-2. Install BlendLuxCore addon zip via **Edit → Preferences → Add-ons → Install…**.
-3. Ensure `blender` is on `$PATH` or pass `blender_bin=` explicitly.
+1. Download Blender 4.5 LTS from <https://www.blender.org/download/lts/4-5/> (e.g., `blender-4.5.6-macos-arm64.dmg`).
+2. Download BlendLuxCore addon zip from <https://github.com/LuxCoreRender/BlendLuxCore/releases> (e.g., `BlendLuxCore-2.10.2.zip`).
+3. Install BlendLuxCore addon zip via **Edit → Preferences → Add-ons → Install…**.
+4. Ensure `blender` is on `$PATH` or pass `blender_bin=` explicitly.
 
 > Every Blender command in this tutorial uses `blender -b -P <script.py>`
 > (the `-b` flag = headless).  You never need the GUI.

@@ -1,0 +1,19 @@
+{
+  "calibration": {
+    "patch_count": 160,
+    "undistorted": false,
+    "psf_size": 31,
+    "patch_size": 192,
+    "method": "wiener",
+    "per_channel": false,
+    "output_npz": "calibration_triplet_a.npz"
+  },
+  "deconvolution": {
+    "lambda_param": 2500.0,
+    "alpha": 0.6666666666666666,
+    "mse_vs_reference": 0.00366517508248975,
+    "psnr_vs_reference": 24.359052746263934,
+    "output_image": "deconvolved_gray.png",
+    "output_array": "deconvolved_gray.npy"
+  }
+}

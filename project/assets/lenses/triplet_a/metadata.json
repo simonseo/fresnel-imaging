@@ -1,0 +1,70 @@
+{
+  "id": "triplet_a",
+  "kind": "triplet",
+  "parameters": {
+    "prescription": [
+      {
+        "radius": 80.0,
+        "thickness": 4.0,
+        "ior": 1.62,
+        "diameter": 48.0
+      },
+      {
+        "radius": -65.0,
+        "thickness": 2.0,
+        "ior": 1.0,
+        "diameter": 48.0
+      },
+      {
+        "radius": 42.0,
+        "thickness": 2.4,
+        "ior": 1.72,
+        "diameter": 40.0
+      },
+      {
+        "radius": -38.0,
+        "thickness": 1.5,
+        "ior": 1.0,
+        "diameter": 40.0
+      },
+      {
+        "radius": 65.0,
+        "thickness": 3.8,
+        "ior": 1.62,
+        "diameter": 44.0
+      },
+      {
+        "radius": -90.0,
+        "thickness": 25.0,
+        "ior": 1.0,
+        "diameter": 44.0
+      }
+    ],
+    "segments": 256
+  },
+  "object_names": [
+    "triplet_a_E0",
+    "triplet_a_E1",
+    "triplet_a_E2"
+  ],
+  "object_count": 3,
+  "files": {
+    "scene_blend": "scene.blend",
+    "preview_png": "preview.png",
+    "model_glb": "lens.glb",
+    "model_gltf": "lens.gltf",
+    "step4": {
+      "reference_scene_png": "step4/reference_scene.png",
+      "blurred_scene_exr": "step4/blurred_scene.exr",
+      "blurred_scene_png": "step4/blurred_scene.png",
+      "psf_center_npy": "step4/psf_center.npy",
+      "psf_offaxis_npy": "step4/psf_offaxis.npy",
+      "psf_summary_json": "step4/psf_summary.json"
+    },
+    "step5_step6": {
+      "calibration_npz": "step5_step6/calibration_triplet_a.npz",
+      "deconvolved_png": "step5_step6/deconvolved_gray.png",
+      "summary_json": "step5_step6/summary.json"
+    }
+  }
+}

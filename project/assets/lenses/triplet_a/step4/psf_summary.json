@@ -1,0 +1,17 @@
+{
+  "psf_size": 31,
+  "center_sum": 1.0,
+  "offaxis_sum": 1.0,
+  "center_max": 0.21008448344146002,
+  "offaxis_max": 0.4395583551054007,
+  "inputs": {
+    "center_png": "psf_point_center.png",
+    "offaxis_png": "psf_point_offaxis.png"
+  },
+  "outputs": {
+    "center_npy": "psf_center.npy",
+    "offaxis_npy": "psf_offaxis.npy",
+    "center_preview_png": "psf_center_preview.png",
+    "offaxis_preview_png": "psf_offaxis_preview.png"
+  }
+}

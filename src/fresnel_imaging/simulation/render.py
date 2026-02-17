@@ -9,6 +9,7 @@ from __future__ import annotations
 import os
 import shutil
 import subprocess
+import sys
 from dataclasses import dataclass, field
 from typing import Any
 
@@ -277,14 +278,21 @@ def run_headless(
 
 def _find_blender() -> str:
     """Locate the Blender binary on the system."""
+    if sys.platform == "darwin":
+        mac_paths = [
+            "/Applications/Blender.app/Contents/MacOS/Blender",
+            os.path.expanduser("~/Applications/Blender.app/Contents/MacOS/Blender"),
+        ]
+        for path in mac_paths:
+            if os.path.isfile(path):
+                return path
+
     found = shutil.which("blender")
     if found:
         return found
 
     # Common installation paths
     candidates = [
-        "/Applications/Blender.app/Contents/MacOS/Blender",
-        os.path.expanduser("~/Applications/Blender.app/Contents/MacOS/Blender"),
         "C:\\Program Files\\Blender Foundation\\Blender\\blender.exe",
         "C:\\Program Files\\Blender Foundation\\Blender 4.0\\blender.exe",
         "C:\\Program Files\\Blender Foundation\\Blender 3.6\\blender.exe",

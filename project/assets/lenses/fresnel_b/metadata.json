@@ -1,0 +1,21 @@
+{
+  "id": "fresnel_b",
+  "kind": "fresnel",
+  "parameters": {
+    "diameter": 80.0,
+    "focal_length": 130.0,
+    "n_grooves": 80,
+    "thickness": 1.8,
+    "segments": 256
+  },
+  "object_names": [
+    "fresnel_b"
+  ],
+  "object_count": 1,
+  "files": {
+    "scene_blend": "scene.blend",
+    "preview_png": "preview.png",
+    "model_glb": "lens.glb",
+    "model_gltf": "lens.gltf"
+  }
+}
